@@ -5,16 +5,27 @@
 
 <body>
     <script type="text/javascript">
-    var clicks = 0;
-    function onClick() {
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
+    var clicks1 = 0;
+    var clicks2 = 0;
+
+    function onClick1() {
+        clicks1 += 1;
+        document.getElementById("clicks1").innerHTML = clicks1;
     };
+
+    function onClick2() {
+        clicks2 += 1;
+        document.getElementById("clicks2").innerHTML = clicks2;
+    };
+
     </script>
-    <button type="button" onClick="onClick()">Click me</button>
-    <p>Clicks: <a id="clicks">0</a></p>
+    <!-- <button type="button" onClick="onClick()">Click me</button> -->
+    <!-- <p>Clicks: <a id="clicks">0</a></p> -->
 
     <p>
-        <img src="cat.jpg" onClick="onClick()">
+    <p>Clicks: <a id="clicks1">0</a></p>
+        <img src="cat.jpg" onClick="onClick1()">
+    <p>Clicks: <a id="clicks2">0</a></p>
+        <img src="cat2.jpg" onClick="onClick2()">
 
 </body></html>
